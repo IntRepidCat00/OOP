@@ -19,20 +19,14 @@ public:
     {
         Edit->setText(QString::number(fr.Numerator) + '/' + QString::number(fr.Denominator));
     }
-
     void setNumerator(int newNumerator);
-
     void setDenominator(int newDenominator);
-
     int getDenominator() const;
-
     int getNumerator() const;
 
 private:
     int Numerator;
     int Denominator;
-
-
 };
 
 #endif // FRACTION_PNR_H

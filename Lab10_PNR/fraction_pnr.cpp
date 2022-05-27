@@ -45,7 +45,7 @@ Fraction_PNR Fraction_PNR::operator-(const Fraction_PNR& fr2)
         d = this->Denominator * fr2.Denominator;
     } else
     {
-        n = this->Numerator + fr2.getNumerator();
+        n = this->Numerator - fr2.getNumerator();
         d = this->Denominator;
     }
     return Fraction_PNR(n, d);
@@ -64,3 +64,5 @@ Fraction_PNR Fraction_PNR::operator/(const Fraction_PNR& fr2)
     int d = this->Denominator * fr2.Numerator;
     return Fraction_PNR(n, d);
 }
+
+
